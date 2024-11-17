@@ -98,6 +98,19 @@ void app_main() {
     }
 }
 ```
+## Using PulseView for Debugging
+
+For debugging and visualizing the 1-Wire communication between the ESP32 and the DS18B20 sensor, I used **PulseView**, an open-source logic analyzer software. PulseView helped me capture and analyze the signal waveforms, ensuring the proper timing of the 1-Wire protocol.
+
+Below is a screenshot of the captured waveform showing the communication between the ESP32 and the DS18B20 during device discovery and temperature conversion.
+
+![image](https://github.com/user-attachments/assets/69cf990c-4c34-4fff-bdaa-b1319d25405b)
+
+The captured signal helped me fine-tune the timing and ensure that the bit-banging operations were correctly implemented in the code.
+
+
+
+
 ## License
 
 This project is licensed under the MIT License
